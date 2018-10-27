@@ -21,3 +21,6 @@ C:\Users\Willianna\Desktop\Trabalho Interdisciplinar\Testes\Versao 0 - Aed_So_In
 C:\Users\1094820\Downloads\Aed_So_Interdisciplinar\bin\Debug\Aed_So_Interdisciplinar.exe.config
 C:\Users\1094820\Downloads\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.exe
 C:\Users\1094820\Downloads\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.pdb
+C:\Users\1094820\Source\Repos\Escalonador\Aed_So_Interdisciplinar\bin\Debug\Aed_So_Interdisciplinar.exe.config
+C:\Users\1094820\Source\Repos\Escalonador\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.exe
+C:\Users\1094820\Source\Repos\Escalonador\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.pdb
