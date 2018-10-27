@@ -24,3 +24,12 @@ C:\Users\1094820\Downloads\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdiscipl
 C:\Users\1094820\Source\Repos\Escalonador\Aed_So_Interdisciplinar\bin\Debug\Aed_So_Interdisciplinar.exe.config
 C:\Users\1094820\Source\Repos\Escalonador\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.exe
 C:\Users\1094820\Source\Repos\Escalonador\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.pdb
+C:\Users\1034593\Source\Repos\Escalonador\Aed_So_Interdisciplinar\bin\Debug\Aed_So_Interdisciplinar.exe.config
+C:\Users\1034593\Source\Repos\Escalonador\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.exe
+C:\Users\1034593\Source\Repos\Escalonador\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.pdb
+C:\Users\1034593\Source\Repos\Escalonador\Aed_So_Interdisciplinar\bin\Debug\Aed_So_Interdisciplinar.exe
+C:\Users\1034593\Source\Repos\Escalonador\Aed_So_Interdisciplinar\bin\Debug\Aed_So_Interdisciplinar.pdb
+C:\Users\1034593\Source\Repos\Escalonador\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.csprojResolveAssemblyReference.cache
+C:\Users\1034593\Source\Repos\Escalonador\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.btnInserir.resources
+C:\Users\1034593\Source\Repos\Escalonador\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.Properties.Resources.resources
+C:\Users\1034593\Source\Repos\Escalonador\Aed_So_Interdisciplinar\obj\Debug\Aed_So_Interdisciplinar.csproj.GenerateResource.Cache

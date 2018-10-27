@@ -12,9 +12,6 @@ namespace Aed_So_Interdisciplinar
         public Fila[] fila;
         static int quantum = 5000;
 
-
-
-
         public override void AdicionarProcessos(Processo[] processos)
         {
             fila = new Fila[20];
