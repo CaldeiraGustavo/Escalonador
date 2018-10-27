@@ -71,8 +71,12 @@ namespace Aed_So_Interdisciplinar
       public override string Imprimir()
         {
             string  arq = " ";
+            foreach (Fila t in fila)
+            {
+                arq += t.Imprimir();
+            }
 
-          arq += fila[0].Imprimir();
+          
             return arq;
         }
 
