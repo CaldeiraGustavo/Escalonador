@@ -31,11 +31,10 @@ namespace Aed_So_Interdisciplinar
             }
         }
 
-        
+
+        static int cont = 0;
         public override void Executar()
         {
-            int cont = 0;
-
             while (!fila[cont].filaVazia())
             {
                 Processo processo = fila[cont].Desenfileirar();
@@ -48,9 +47,10 @@ namespace Aed_So_Interdisciplinar
 
                 processo.InclementCicloExecut();
 
+
                 if (processo.getNUmClicosExecutados() >= 4) ReduzirPriori(processo);
-
-
+                else if (processo.getNCiclos() == 0) fila[cont].Retirar();
+                else fila[cont].proximo();
 
             }
             cont++;
@@ -74,9 +74,7 @@ namespace Aed_So_Interdisciplinar
             foreach (Fila t in fila)
             {
                 arq += t.Imprimir();
-            }
-
-          
+            }         
             return arq;
         }
 

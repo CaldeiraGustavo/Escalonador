@@ -47,14 +47,24 @@ namespace Aed_So_Interdisciplinar
             return j;
         }
 
-        public override Elemento Retirar()
+        public override void Retirar()
         {
-            Elemento aux = this.atual.prox;
-            this.anterior.prox = aux.prox;
+            Elemento aux = this.anterior.prox;
+
+            if (atual.prox.processo == null)
+            {
+                this.anterior.prox = aux.prox;
+                this.atual = aux.prox.prox;
+                this.anterior = aux.prox;
+            }
+            else
+            {
+                this.anterior.prox = aux.prox;
+                this.atual = aux.prox;
+            }
 
             if (this.atual == this.anterior) this.atual.prox = this.anterior;
-            else aux.prox = null;
-            return aux;
+            else aux = null;
         }
 
 
@@ -68,24 +78,20 @@ namespace Aed_So_Interdisciplinar
 
         public Processo Desenfileirar()
         {
-           Processo processo = atual.processo;
-            proximo();
-            return processo;
+            return atual.processo;
         }
+
+
 
         public void proximo()
         {
-
             this.atual = this.atual.prox;
 
             this.anterior = this.anterior.prox;
 
-
             if (this.atual.processo == null)
             {
-
                 this.atual = this.atual.prox;
-
                 this.anterior = this.anterior.prox;
             }
         }

@@ -11,7 +11,7 @@ namespace Aed_So_Interdisciplinar
 
         public abstract void Inserir(Processo processo);
         public abstract string Imprimir();
-        public abstract Elemento Retirar();
+        public abstract void Retirar();
     }
 
 
