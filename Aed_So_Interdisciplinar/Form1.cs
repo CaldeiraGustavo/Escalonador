@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +16,9 @@ namespace Aed_So_Interdisciplinar
 
         Processo[] allProcess;
         static Escalonador escalonador = new Circular();
+        Thread t1 = new Thread(AtivarExecucaoEscalonador);
+        static bool a = true;
+        static bool n = true;
 
         public btnInserir()
         {
@@ -27,19 +30,12 @@ namespace Aed_So_Interdisciplinar
 
         }
 
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             LeituraArquivo();
-
             timer1.Enabled = true;
-
-
         }
-
-
-
+        
         public void LeituraArquivo()
         {
             LeituraArquivo arq;
@@ -52,31 +48,16 @@ namespace Aed_So_Interdisciplinar
             escalonador.AdicionarProcessos(allProcess);
         }
 
-
-        static bool a = true;
-
         private void timer1_Tick(object sender, EventArgs e)
         {       
-                          
-                richTextBox1.Text = escalonador.Imprimir();            
-            
+            richTextBox1.Text = escalonador.Imprimir();
         }
-
-        Thread t1 = new Thread(AtivarExecucaoEscalonador);
 
         private void btnIniciarExecao_Click(object sender, EventArgs e)
         {
-          
-            
-      
-                t1.Start();
-            
-           
+            t1.Start();
         }
 
-
-
-       static bool n = true;
         static public void AtivarExecucaoEscalonador()
         {
             try
