@@ -13,27 +13,26 @@ namespace Aed_So_Interdisciplinar
 {
     public partial class btnInserir : Form
     {
+        Escalonador escalonador = new Circular();
+
+        Thread atualizarInterface;
+        Thread Execucao;
+        Thread semaforo;
 
         Processo[] allProcess;
-        static Escalonador escalonador = new Circular();
-        Thread t1 = new Thread(AtivarExecucaoEscalonador);
-        static bool a = true;
-        static bool n = true;
+        
 
         public btnInserir()
         {
             InitializeComponent();
         }
 
-        static public void Thread_Principal()
-        {
-
-        }
+     
 
         private void button1_Click(object sender, EventArgs e)
         {
             LeituraArquivo();
-            timer1.Enabled = true;
+            
         }
         
         public void LeituraArquivo()
@@ -45,38 +44,24 @@ namespace Aed_So_Interdisciplinar
 
             allProcess = arq.LeituraArquivoProcessos();
 
+            foreach (Processo t in allProcess)
+            {
+
+                listViewProcessos.Items.Add(new ListViewItem(new string[4] { Convert.ToString(t.getPrioridade()), t.getNomeProcesso(), Convert.ToString(t.getPID()), Convert.ToString(t.getNUmClicosExecutados()) }));
+            }
+
             escalonador.AdicionarProcessos(allProcess);
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {       
-            richTextBox1.Text = escalonador.Imprimir();
-        }
+       
 
         private void btnIniciarExecao_Click(object sender, EventArgs e)
         {
-            t1.Start();
+           
         }
 
-        static public void AtivarExecucaoEscalonador()
-        {
-            try
-            {
-                while (n)
-                {
-                    escalonador.Executar();
-                }
-            }
-            catch (System.OverflowException)
-            {
-                Thread t2 = new Thread(desativarExecucaoEscalonador);
-                t2.Start();
-            }
-        }
+        
 
-        static public void desativarExecucaoEscalonador()
-        {
-            n = false;
-        }
+        
     }
 }

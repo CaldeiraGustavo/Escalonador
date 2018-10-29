@@ -27,6 +27,13 @@ namespace Aed_So_Interdisciplinar
         }
 
 
+
+        public string getNomeProcesso() { return this.nomeProcesso; }
+
+
+        public int getPID() { return this.pid; }
+
+
         public int getNCiclos() { return this.nCiclos; }
       
 

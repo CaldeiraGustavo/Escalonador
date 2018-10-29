@@ -54,9 +54,7 @@ namespace Aed_So_Interdisciplinar
 
             }
             cont++;
-
-
-            if (cont >= fila.Length) throw new System.OverflowException();
+           
         }
 
 
